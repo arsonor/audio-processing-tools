@@ -1,42 +1,92 @@
-sms-tools
-========= 
+# Audio Processing Tools
 
-Sound analysis/synthesis tools for music applications written in python.
+A comprehensive collection of sound analysis and synthesis tools for music applications and audio signal processing education. This repository combines spectral models, sample audio files, educational materials, and interactive interfaces for hands-on learning and experimentation.
 
-The package includes the following sound analysis/synthesis models:
+## Features
 
-* dftModel.py: models based on the Discrete Fourier Transform
-* stft.py: models based on the Short-Time Fourier Transform
-* sineModel.py: models based on a Sinusoidal Model
-* harmonicModel.py: models based on a Harmonic Model
-* stochasticModel.py: models based on a Stochastic Model
-* sprModel.py: models based on a Sinusoidal plus Residual Model
-* spsModel.py: models based on a Sinusoidal plus Stochastic Model
-* hprModel.py: models based on a Harmonic plus Residual Model
-* hpsModel.py: models based on a Harmonic plus Stochastic Model
+- **Multiple Audio Analysis Models**: Implementations of various spectral processing techniques
+- **Sample Sound Library**: Diverse collection of instruments, speech, and synthesized audio
+- **Educational Materials**: Lectures, exercises, and examples for learning audio signal processing
+- **Interactive Interfaces**: GUI tools for real-time model exploration and audio transformations
+- **Workspace**: Development environment for audio processing experiments
 
+## Repository Structure
 
-Installation
-------------
+```
+audio-processing-tools/
+├── software/              # Core audio processing models and transformations
+│   ├── models/           # Analysis models (DFT, STFT, Sine, Harmonic, Stochastic)
+│   └── transformations/  # Audio transformation functions
+├── sounds/               # Sample audio files (instruments, speech, synthesized signals)
+├── materials/            # Educational content
+│   ├── lectures/        # Lecture materials and examples
+│   ├── exercises/       # Practice exercises
+│   ├── examples/        # Code examples
+│   ├── interface-models/        # GUI for exploring models
+│   └── interface-transformations/  # GUI for audio transformations
+├── workspace/           # Working directory for experiments
+└── assignments/         # Coursework and projects
+```
 
-Install using pip:
+## Audio Analysis Models
 
-    pip install sms-tools
+The `software/models/` directory includes implementations of:
 
-Binary packages are available for Linux, macOS (Intel & Apple Silicon) and Windows (64 bit) on all recent python versions.
+- **dftModel.py**: Discrete Fourier Transform models
+- **stft.py**: Short-Time Fourier Transform models
+- **sineModel.py**: Sinusoidal modeling
+- **harmonicModel.py**: Harmonic analysis
+- **stochasticModel.py**: Stochastic modeling
+- **sprModel.py**: Sinusoidal plus Residual Model
+- **spsModel.py**: Sinusoidal plus Stochastic Model
+- **hprModel.py**: Harmonic plus Residual Model
+- **hpsModel.py**: Harmonic plus Stochastic Model
 
-To build and install the package locally you can use the python packaging tools:
+## Installation
 
-    pip install build
-    python -m build
+1. Clone the repository:
+```bash
+git clone https://github.com/arsonor/audio-processing-tools.git
+cd audio-processing-tools
+```
 
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
 
-Jupyter Notebooks
--------
-We provide a separate repository of examples and teaching materials in the form of Jupyter notebooks.
-You can find them at https://github.com/MTG/sms-tools-materials
+3. (Optional) Install sms-tools package:
+```bash
+pip install sms-tools
+```
 
-License
--------
+## Sample Sounds
 
-sms-tools is made available under the terms of the Affero GPL license (http://www.gnu.org/licenses/agpl-3.0.en.html). 
+The `sounds/` directory contains a variety of audio samples including:
+- Musical instruments (flute, oboe, cello, violin, saxophone, trumpet, piano, organ, vibraphone)
+- Percussion (bendir, mridangam)
+- Vocals (speech, singing, soprano)
+- Synthesized signals (sine waves, sawtooth, chirps)
+- Natural sounds (ocean, rain)
+
+## Usage
+
+Explore the interactive interfaces in the `materials/` directory:
+- Navigate to `materials/interface-models/` for model exploration
+- Navigate to `materials/interface-transformations/` for audio transformations
+- Use `workspace/` for your own experiments and analysis
+
+## Educational Resources
+
+This repository includes comprehensive educational materials based on audio signal processing techniques. The `materials/` directory contains:
+- Lecture notes and code examples
+- Hands-on exercises
+- Interactive demonstrations
+
+## Credits
+
+Based on the sms-tools package developed by the Music Technology Group (MTG) at Universitat Pompeu Fabra.
+
+## License
+
+This project is made available under the terms of the Affero GPL license (http://www.gnu.org/licenses/agpl-3.0.en.html). 
