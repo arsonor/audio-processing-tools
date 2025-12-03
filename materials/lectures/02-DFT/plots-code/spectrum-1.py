@@ -3,10 +3,12 @@ import numpy as np
 import sys
 import math
 
-from smstools.models import utilFunctions as UF
-from smstools.models import dftModel as DFT
+sys.path.append('../../../../')
 
-(fs, x) = UF.wavread('../../../sounds/trumpet-A4.wav')
+from software.models import utilFunctions as UF
+from software.models import dftModel as DFT
+
+(fs, x) = UF.wavread('../../../../sounds/trumpet-A4.wav')
 w = np.hamming(511)
 N = 512
 pin = 5000

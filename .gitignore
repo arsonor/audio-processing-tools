@@ -24,3 +24,5 @@ software/transformations_interface/output_sounds/*.wav
 software/models/utilFunctions_C/utilFunctions_C.cp310-win_amd64.pyd
 software/models/utilFunctions_C/utilFunctions_C.cp39-win_amd64.pyd
 software/models_GUI.pyproj
+
+.venv
